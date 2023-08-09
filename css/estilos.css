@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
+body {
+  font-family: "Prompt", sans-serif;
+  background-color: hsl(0, 37%, 86%);
+  margin: 0;
+  padding: 20px;
+
+  background-image: url(../video/Alg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  color: #f70707;
+  font-family: "Prompt", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 10px auto;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 32px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: #000d1e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.9s ease-in-out;
+}
+.boton:hover {
+  background-color: #17172c;
+  padding: 10px 20px;
+}
+/* estilos para los formularios */
+input {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1a8cff;
+  box-shadow: 0 0 0 2px rgba(26, 140, 255, 0.3);
+}
+
+input::placeholder {
+  color: #3e204a;
+  font-weight: bold;
+}
+
+.input {
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/*  */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#resp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 900;
+  background-color: #3e204a;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(12, 2, 2, 0.5);
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5;
+  animation: fadeIn 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.boton2 {
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: #000d1e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 80px;
+  transition: all 0.3s ease-in-out;
+  font-size: 23px;
+  position: relative;
+  overflow: hidden;
+}
+
+.boton2 {
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: #000d1e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 80px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-size: 23px;
+}
+
+.boton2:hover {
+  background-color: #224769;
+  transform: scale(1.1) rotate(15deg);
+}
+
+#tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 58%;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 900;
+  background-color: #3e204a;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(12, 2, 2, 0.5);
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.5;
+  animation: fadeIn 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.checkbox-container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-container label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-right: 7px;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label::before {
+  transform: scale(0.8);
+  background-color: #e2a93d;
+}
+
+.custom-label {
+  color: #fff;
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+}
+
+.botonesIva {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  margin-top: -50px;
+}
+
+main {
+  margin-top: -25px;
+}
